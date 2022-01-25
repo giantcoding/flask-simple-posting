@@ -1,0 +1,52 @@
+/* NAVBAR */
+
+.nav-item{
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.nav-link:hover{
+  color: rgb(255, 174, 0);
+}
+
+.nav-link{
+color:rgb(255, 255, 255)
+}
+
+.navbar-text{
+  font-size: 26px;
+  margin-left:55%;
+  font-weight: bolder;
+  color: white;
+}
+
+.post-header{
+  text-align: center;
+  padding: 5%;
+  font-weight: bold;
+}
+
+.card{
+  margin: 45px;
+  background-color: rgba(226, 226, 226, 0.514);
+}
+
+.date{
+  font-style: italic;
+}
+
+.post-title{
+  font-size: 40px;
+
+}
+
+.posting{
+  text-align: center;
+  margin-left: 40px;
+}
+
+.login-form{
+  margin: 5px auto;
+	width: 320px;
+	color: steelblue;
+}

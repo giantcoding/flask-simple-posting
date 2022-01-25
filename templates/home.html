@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1 class = "post-header">Posting in Flask</h1>
+{% for post in posts %}
+
+<section>
+        <div class = "card">
+                <div class="card-body">
+        <h4 class="post-title">{{ post.title }} </h4>
+        <p class="date">Fecha de publicación: {{ post.date.strftime("%m/%d/%y") }}</p>
+        <p>{{ post.text }}</p>
+        <form class="delete-button" action="{{url_for('delete')}}" method="POST">
+                <button class = "btn btn-primary" value = "{{post.id}}" name="post_id">Delete post</button>
+        </form>
+                </div>
+        </div>
+</section>
+
+{% endfor %}
+
+{% endblock %}

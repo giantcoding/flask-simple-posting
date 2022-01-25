@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h2 class="post-header">JUST POST IT!</h2>
+
+
+<div class = "posting">
+    <form class="login-form" action="{{url_for('create_post')}}" method="POST">
+        <input class="form-control form-control-lg" type="text" name="title" placeholder="Title here">
+        <br>
+        <textarea name="text" cols="30" rows="10" placeholder="Tell us whatever you want!"></textarea>
+        <input type="submit" name="sumit">
+</div>
+
+</form>
+
+{% endblock %}
