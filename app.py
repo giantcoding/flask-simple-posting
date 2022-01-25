@@ -19,8 +19,8 @@ class Post(database.Model):
 # Routes
 @app.route("/")
 def home():
-    post = Post.query.all()
-    return render_template("home.html", posts=post)
+    posts = Post.query.order_by(Post.date.desc()).all()
+    return render_template("home.html", posts=posts)
 
 @app.route("/add", methods=["GET", "POST"])
 def add():
