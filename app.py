@@ -34,8 +34,6 @@ def delete():
     database.session.commit()
     return redirect("/")
     
-
-
 @app.route("/create", methods=["POST"])
 def create_post():
     title = request.form.get("title")
